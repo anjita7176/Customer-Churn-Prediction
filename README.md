@@ -92,17 +92,30 @@ Used to capture complex patterns and relationships in customer data through mult
 
 ---
 
-## 📊 Model Evaluation
+## 📊 Model Performance Comparison
 
-Models are evaluated using:
+Both Machine Learning models were evaluated using multiple classification metrics.
 
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- ROC-AUC Score
-- Confusion Matrix
-- Classification Report
+| Metric | Logistic Regression | Random Forest |
+|---|---:|---:|
+| Accuracy | 80.55% | 77.50% |
+| Precision | 65.72% | 56.21% |
+| Recall | 55.88% | 68.98% |
+| F1-Score | 60.40% | 61.94% |
+| ROC-AUC | 0.8421 | 0.8375 |
+
+### 🏆 Key Findings
+
+- Logistic Regression achieved the highest accuracy of **80.55%**.
+- Logistic Regression achieved a slightly higher ROC-AUC of **0.8421**.
+- Random Forest achieved better churn recall of **68.98%**.
+- Random Forest achieved a slightly higher F1-Score of **61.94%**.
+
+### Conclusion
+
+Logistic Regression performed better in overall accuracy and ROC-AUC, while Random Forest was better at identifying actual churn customers.
+
+The results highlight the trade-off between overall predictive performance and identifying customers who are likely to leave.
 
 ---
 
